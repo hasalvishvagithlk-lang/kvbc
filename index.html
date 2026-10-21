@@ -1,0 +1,641 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071c16">
+  <meta name="description" content="KVBC Official — Kalutara Vidyalaya Official Broadcasting Channel, managed by the Media Unit.">
+  <title>KVBC Official | Kalutara Vidyalaya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">
+      <img class="brand-logo" src="images/kvbc-logo.png" alt="KVBC Official Logo">
+      <span>
+        <strong>KVBC OFFICIAL</strong>
+        <small>Broadcasting with Purpose</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#home">Home</a>
+      <a href="#live">Live Broadcast</a>
+      <a href="#videos">Latest Videos</a>
+      <a href="#about">About Us</a>
+      <a href="https://www.youtube.com/@kvbcofficial"
+         target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">KALUTARA VIDYALAYA MEDIA UNIT</span>
+        <h1>Stories That Matter.<br><span>Voices That Inspire.</span></h1>
+        <p>
+          Welcome to KVBC Official — Kalutara Vidyalaya's official broadcasting
+          channel, bringing you school news, events and live broadcasts.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#live">Watch Live Broadcast</a>
+          <a class="button button-outline"
+             href="https://www.youtube.com/@kvbcofficial"
+             target="_blank" rel="noopener noreferrer">Visit YouTube ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="KVBC Official branding">
+        <div class="hero-circle circle-one"></div>
+        <div class="hero-circle circle-two"></div>
+        <img class="hero-logo" src="images/kvbc-logo.png" alt="KVBC Official Logo">
+        <div class="broadcast-tag">● ON AIR • SCHOOL • COMMUNITY</div>
+      </div>
+    </section>
+
+    <!-- LIVE BROADCAST: MOVED ABOVE LATEST VIDEOS -->
+    <section class="live-section section" id="live">
+      <div class="live-copy">
+        <span class="eyebrow">KVBC LIVE BROADCAST</span>
+        <h2>School moments.<br><span>Broadcast live.</span></h2>
+
+        <p id="liveDescription" aria-live="polite">
+          Checking the official KVBC channel for live and upcoming broadcasts...
+        </p>
+
+        <a class="button button-primary"
+           href="https://www.youtube.com/@kvbcofficial/streams"
+           target="_blank" rel="noopener noreferrer">
+          Open Streams on YouTube ↗
+        </a>
+
+        <p class="live-status-text" id="liveStatus" role="status" aria-live="polite">
+          Checking stream status...
+        </p>
+      </div>
+
+      <div class="live-card" id="liveCard">
+        <div class="live-screen" id="liveScreen">
+          <div class="live-placeholder">
+            <span class="live-play">▶</span>
+            <strong>KVBC OFFICIAL</strong>
+            <span>Checking broadcast availability...</span>
+          </div>
+        </div>
+
+        <div class="live-card-info" id="liveCardInfo">
+          <span class="live-indicator" id="liveBadge">● CHECKING STATUS</span>
+          <strong id="liveTitle">KVBC Official</strong>
+          <span id="liveMeta">Kalutara Vidyalaya Media Unit</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST VIDEOS -->
+    <section class="videos-section section" id="videos">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">FROM OUR CHANNEL</span>
+          <h2>Latest <span>Videos</span></h2>
+          <p>Catch up on the latest stories and broadcasts from KVBC Official.</p>
+        </div>
+        <a class="text-link"
+           href="https://www.youtube.com/@kvbcofficial/videos"
+           target="_blank" rel="noopener noreferrer">View all videos ↗</a>
+      </div>
+
+      <p class="video-status" id="videoStatus" role="status" aria-live="polite">
+        Loading KVBC videos...
+      </p>
+      <div class="video-grid" id="videoGrid"></div>
+
+      <div class="center-action">
+        <a class="button button-outline"
+           href="https://www.youtube.com/@kvbcofficial/videos"
+           target="_blank" rel="noopener noreferrer">Explore Our Channel</a>
+      </div>
+    </section>
+
+    <section class="about-section section" id="about">
+      <span class="eyebrow">WHO WE ARE</span>
+      <h2>Broadcasting with <span>Purpose.</span></h2>
+      <p class="about-description">
+        This official YouTube channel is managed by the Media Unit of Kalutara
+        Vidyalaya, bringing you the latest news, events, and live broadcasts from
+        both within and beyond our school. From school activities to community
+        happenings, we aim to provide engaging and informative content for everyone.
+      </p>
+
+      <div class="about-points">
+        <div>
+          <span class="point-icon">◉</span>
+          <strong>School Events</strong>
+          <p>Highlights from school life and special occasions.</p>
+        </div>
+        <div>
+          <span class="point-icon">▷</span>
+          <strong>Live Broadcasts</strong>
+          <p>Follow important events and broadcasts online.</p>
+        </div>
+        <div>
+          <span class="point-icon">✦</span>
+          <strong>Community Stories</strong>
+          <p>Sharing stories from our school and community.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe-section">
+      <span class="eyebrow">STAY CONNECTED</span>
+      <h2>Never miss a <span>moment.</span></h2>
+      <p>Subscribe to KVBC Official for fresh updates, school events and new videos.</p>
+      <a class="button button-light"
+         href="https://www.youtube.com/@kvbcofficial?sub_confirmation=1"
+         target="_blank" rel="noopener noreferrer">Subscribe on YouTube ↗</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home">
+      <img class="brand-logo" src="images/kvbc-logo.png" alt="KVBC Official Logo">
+      <span>
+        <strong>KVBC OFFICIAL</strong>
+        <small>Broadcasting with Purpose</small>
+      </span>
+    </a>
+    <p>© <span id="currentYear"></span> KVBC Official · Kalutara Vidyalaya Media Unit</p>
+    <a href="https://www.youtube.com/@kvbcofficial"
+       target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+  </footer>
+
+  <script>
+    // IMPORTANT:
+    // Insert a NEW YouTube Data API v3 key here.
+    // Restrict it to YouTube Data API v3 and your website's HTTP referrers.
+    const YOUTUBE_API_KEY = "AIzaSyD3B5MhFyqwzMXvxlwzIlAV-iylKCIY9Fg";
+    const KVBC_CHANNEL_ID = "UCMIZ9tbYU7Bp40sTmhEdSJw";
+
+    const DISCOVERY_INTERVAL_MS = 5 * 60 * 1000;
+    const SCHEDULE_CHECK_INTERVAL_MS = 60 * 1000;
+
+    const videoGrid = document.getElementById("videoGrid");
+    const videoStatus = document.getElementById("videoStatus");
+    const liveScreen = document.getElementById("liveScreen");
+    const liveStatus = document.getElementById("liveStatus");
+    const liveDescription = document.getElementById("liveDescription");
+    const liveBadge = document.getElementById("liveBadge");
+    const liveTitle = document.getElementById("liveTitle");
+    const liveMeta = document.getElementById("liveMeta");
+
+    let scheduledStream = null;
+    let currentLiveVideoId = null;
+    let scheduleTimer = null;
+    let discoveryInProgress = false;
+    let scheduleCheckInProgress = false;
+    let lastKnownState = "unknown";
+
+    function makeElement(tag, className, text) {
+      const el = document.createElement(tag);
+      if (className) el.className = className;
+      if (text !== undefined) el.textContent = text;
+      return el;
+    }
+
+    function getThumbnailUrls(snippet, videoId) {
+      const thumbs = snippet.thumbnails || {};
+      return [
+        thumbs.maxres?.url,
+        thumbs.standard?.url,
+        thumbs.high?.url,
+        thumbs.medium?.url,
+        thumbs.default?.url,
+        videoId ? `https://i.ytimg.com/vi/${encodeURIComponent(videoId)}/hqdefault.jpg` : "",
+        videoId ? `https://i.ytimg.com/vi/${encodeURIComponent(videoId)}/mqdefault.jpg` : ""
+      ].filter((url, index, list) => url && list.indexOf(url) === index);
+    }
+
+    function createVideoCard(item) {
+      const snippet = item.snippet || {};
+      const videoId =
+        item.contentDetails?.videoId ||
+        snippet.resourceId?.videoId ||
+        item.id?.videoId ||
+        item.id ||
+        "";
+
+      const card = makeElement("a", "video-card");
+      card.href = videoId
+        ? `https://www.youtube.com/watch?v=${encodeURIComponent(videoId)}`
+        : "https://www.youtube.com/@kvbcofficial/videos";
+      card.target = "_blank";
+      card.rel = "noopener noreferrer";
+      card.setAttribute("aria-label", "Watch " + (snippet.title || "KVBC video"));
+
+      const artwork = makeElement("div", "video-art");
+      const thumbnail = makeElement("img", "youtube-thumbnail");
+      thumbnail.alt = snippet.title || "KVBC video thumbnail";
+      thumbnail.loading = "lazy";
+      thumbnail.decoding = "async";
+
+      const urls = getThumbnailUrls(snippet, videoId);
+      let index = 0;
+
+      function tryNextThumbnail() {
+        if (index < urls.length) {
+          thumbnail.src = urls[index++];
+        } else {
+          thumbnail.remove();
+          artwork.classList.add("thumbnail-unavailable");
+        }
+      }
+
+      thumbnail.addEventListener("error", tryNextThumbnail);
+      if (urls.length) tryNextThumbnail();
+      else artwork.classList.add("thumbnail-unavailable");
+
+      const category = makeElement("span", "video-category", "KVBC OFFICIAL");
+      const play = makeElement("span", "play-button", "▶");
+      play.setAttribute("aria-hidden", "true");
+      artwork.append(thumbnail, category, play);
+
+      const info = makeElement("div", "video-card-info");
+      info.append(
+        makeElement("span", "card-kicker", "LATEST UPLOAD"),
+        makeElement("h3", "video-title", snippet.title || "KVBC Official video")
+      );
+
+      const published = snippet.publishedAt
+        ? new Date(snippet.publishedAt).toLocaleDateString(undefined, {
+            year: "numeric", month: "short", day: "numeric"
+          })
+        : "";
+
+      info.append(makeElement("p", "video-date",
+        published ? "Published " + published : "KVBC video"));
+
+      card.append(artwork, info);
+      return card;
+    }
+
+    async function youtubeRequest(endpoint, params) {
+      if (
+        !YOUTUBE_API_KEY ||
+        YOUTUBE_API_KEY === "AIzaSyCKudOYVJQQoAHIh0QPF7ibm1gloXd38oQ"
+      ) {
+        throw new Error("Add your new restricted YouTube API key in index.html.");
+      }
+
+      const url = new URL("https://www.googleapis.com/youtube/v3/" + endpoint);
+      Object.entries({ ...params, key: YOUTUBE_API_KEY }).forEach(([key, value]) => {
+        url.searchParams.set(key, value);
+      });
+
+      const response = await fetch(url);
+      const data = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        throw new Error(data.error?.message || ("HTTP " + response.status));
+      }
+      return data;
+    }
+
+    async function loadKVBCVideos() {
+      videoGrid.replaceChildren();
+      videoStatus.textContent = "Loading KVBC videos...";
+
+      try {
+        const channelData = await youtubeRequest("channels", {
+          part: "contentDetails",
+          id: KVBC_CHANNEL_ID
+        });
+
+        const uploadsPlaylist =
+          channelData.items?.[0]?.contentDetails?.relatedPlaylists?.uploads;
+
+        if (!uploadsPlaylist) throw new Error("No uploads playlist found.");
+
+        const playlistData = await youtubeRequest("playlistItems", {
+          part: "snippet,contentDetails",
+          playlistId: uploadsPlaylist,
+          maxResults: "6"
+        });
+
+        const videos = playlistData.items || [];
+        if (!videos.length) {
+          videoStatus.textContent = "No videos were found on this channel yet.";
+          return;
+        }
+
+        videos.forEach(item => videoGrid.appendChild(createVideoCard(item)));
+        videoStatus.textContent =
+          "Showing " + videos.length + " recent videos from KVBC OFFICIAL.";
+      } catch (error) {
+        console.error("KVBC videos:", error);
+        videoStatus.textContent =
+          "Videos could not be loaded. Check the API key, quota and browser Console.";
+      }
+    }
+
+    function setLiveStatus(message) {
+      liveStatus.textContent = message;
+    }
+
+    function clearScheduleTimer() {
+      if (scheduleTimer) {
+        clearInterval(scheduleTimer);
+        scheduleTimer = null;
+      }
+    }
+
+    function formatDate(dateString) {
+      return new Date(dateString).toLocaleString(undefined, {
+        dateStyle: "medium",
+        timeStyle: "short"
+      });
+    }
+
+    function formatCountdown(milliseconds) {
+      const seconds = Math.max(0, Math.floor(milliseconds / 1000));
+      const days = Math.floor(seconds / 86400);
+      const hours = Math.floor((seconds % 86400) / 3600);
+      const minutes = Math.floor((seconds % 3600) / 60);
+      const remainingSeconds = seconds % 60;
+
+      if (days > 0) return `${days}d ${hours}h ${minutes}m ${remainingSeconds}s`;
+      return `${hours}h ${minutes}m ${remainingSeconds}s`;
+    }
+
+    function showEmptyBroadcast() {
+      clearScheduleTimer();
+      scheduledStream = null;
+      currentLiveVideoId = null;
+      lastKnownState = "empty";
+
+      liveScreen.replaceChildren();
+      liveScreen.removeAttribute("data-video-id");
+
+      const placeholder = makeElement("div", "live-placeholder");
+      placeholder.append(
+        makeElement("span", "live-play", "▶"),
+        makeElement("strong", "", "KVBC OFFICIAL"),
+        makeElement("span", "", "No live broadcast currently detected")
+      );
+      liveScreen.appendChild(placeholder);
+
+      liveBadge.textContent = "● OFFICIAL CHANNEL";
+      liveTitle.textContent = "KVBC Official";
+      liveMeta.textContent = "Kalutara Vidyalaya Media Unit";
+      liveDescription.textContent =
+        "There is no live broadcast currently detected. Check back for upcoming school events.";
+    }
+
+    function showLiveBroadcast(video) {
+      const videoId = video.id?.videoId || video.id;
+      if (!videoId) return;
+
+      clearScheduleTimer();
+      scheduledStream = null;
+      currentLiveVideoId = videoId;
+      lastKnownState = "live";
+
+      if (liveScreen.dataset.videoId === videoId) {
+        liveBadge.textContent = "● LIVE NOW";
+        setLiveStatus("Live broadcast detected.");
+        return;
+      }
+
+      liveScreen.replaceChildren();
+
+      const frame = document.createElement("iframe");
+      frame.src =
+        "https://www.youtube-nocookie.com/embed/" +
+        encodeURIComponent(videoId) + "?autoplay=0&rel=0";
+      frame.title = video.snippet?.title || "KVBC Official live broadcast";
+      frame.allow =
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = "strict-origin-when-cross-origin";
+      frame.className = "live-iframe";
+
+      liveScreen.appendChild(frame);
+      liveScreen.dataset.videoId = videoId;
+
+      liveBadge.textContent = "● LIVE NOW";
+      liveTitle.textContent = video.snippet?.title || "KVBC Official Live";
+      liveMeta.textContent = "Live from Kalutara Vidyalaya Media Unit";
+      liveDescription.textContent = "KVBC Official is broadcasting live now.";
+      setLiveStatus("Live broadcast detected.");
+    }
+
+    function showScheduledBroadcast(video, startTime) {
+      const videoId = video.id?.videoId || video.id;
+      if (!videoId || !startTime) return;
+
+      clearScheduleTimer();
+      currentLiveVideoId = null;
+      scheduledStream = {
+        videoId,
+        title: video.snippet?.title || "KVBC Scheduled Broadcast",
+        startTime
+      };
+      lastKnownState = "upcoming";
+
+      liveScreen.replaceChildren();
+      liveScreen.removeAttribute("data-video-id");
+
+      const panel = makeElement("div", "live-placeholder scheduled-placeholder");
+      panel.append(
+        makeElement("span", "live-play", "◷"),
+        makeElement("strong", "", scheduledStream.title),
+        makeElement("span", "countdown-label", "Broadcast starts in"),
+        makeElement("span", "live-countdown", ""),
+        makeElement("span", "scheduled-time", "Scheduled: " + formatDate(startTime))
+      );
+      liveScreen.appendChild(panel);
+
+      liveBadge.textContent = "● UPCOMING BROADCAST";
+      liveTitle.textContent = scheduledStream.title;
+      liveMeta.textContent = "Scheduled for " + formatDate(startTime);
+      liveDescription.textContent =
+        "An upcoming KVBC broadcast has been scheduled. The website will check whether it goes live.";
+
+      updateCountdown();
+      scheduleTimer = setInterval(updateCountdown, 1000);
+    }
+
+    function updateCountdown() {
+      if (!scheduledStream) {
+        clearScheduleTimer();
+        return;
+      }
+
+      const countdown = liveScreen.querySelector(".live-countdown");
+      if (!countdown) return;
+
+      const remaining =
+        new Date(scheduledStream.startTime).getTime() - Date.now();
+
+      if (remaining > 0) {
+        countdown.textContent = formatCountdown(remaining);
+        setLiveStatus("Upcoming broadcast: " + formatDate(scheduledStream.startTime));
+      } else {
+        countdown.textContent = "Starting soon…";
+        liveDescription.textContent =
+          "The scheduled start time has arrived. Checking the broadcast status...";
+        setLiveStatus("Waiting for YouTube to confirm the live broadcast.");
+        checkScheduledVideoStatus();
+      }
+    }
+
+    async function checkScheduledVideoStatus() {
+      if (!scheduledStream || scheduleCheckInProgress) return;
+      scheduleCheckInProgress = true;
+
+      const videoId = scheduledStream.videoId;
+
+      try {
+        const data = await youtubeRequest("videos", {
+          part: "snippet,liveStreamingDetails,status",
+          id: videoId
+        });
+
+        const video = data.items?.[0];
+        if (!video) {
+          // Keep the last known screen until general discovery confirms a change.
+          setLiveStatus("The scheduled event is unavailable. Refreshing channel status...");
+          return;
+        }
+
+        const details = video.liveStreamingDetails || {};
+        if (
+          details.actualStartTime ||
+          video.snippet?.liveBroadcastContent === "live"
+        ) {
+          showLiveBroadcast({ id: video.id, snippet: video.snippet });
+          return;
+        }
+
+        if (details.actualEndTime) {
+          // Do not claim a replay is available without checking its availability.
+          setLiveStatus("The scheduled broadcast has ended. Checking channel status...");
+          return;
+        }
+
+        setLiveStatus("The broadcast has not started yet. Checking again shortly.");
+      } catch (error) {
+        console.error("KVBC scheduled stream status:", error);
+        setLiveStatus("Could not verify the scheduled stream. Retrying...");
+      } finally {
+        scheduleCheckInProgress = false;
+      }
+    }
+
+    async function findBroadcasts() {
+      if (discoveryInProgress) return;
+      discoveryInProgress = true;
+
+      try {
+        // Search for an active live broadcast.
+        const liveData = await youtubeRequest("search", {
+          part: "snippet",
+          channelId: KVBC_CHANNEL_ID,
+          type: "video",
+          eventType: "live",
+          maxResults: "5"
+        });
+
+        const liveVideo = liveData.items?.find(item => item.id?.videoId);
+
+        if (liveVideo) {
+          showLiveBroadcast(liveVideo);
+          return;
+        }
+
+        // No active live result. Search for an upcoming broadcast.
+        const upcomingData = await youtubeRequest("search", {
+          part: "snippet",
+          channelId: KVBC_CHANNEL_ID,
+          type: "video",
+          eventType: "upcoming",
+          maxResults: "5",
+          order: "date"
+        });
+
+        const upcomingVideo = upcomingData.items?.find(item => item.id?.videoId);
+
+        if (upcomingVideo) {
+          const detailsData = await youtubeRequest("videos", {
+            part: "snippet,liveStreamingDetails,status",
+            id: upcomingVideo.id.videoId
+          });
+
+          const fullVideo = detailsData.items?.[0];
+          const startTime = fullVideo?.liveStreamingDetails?.scheduledStartTime;
+
+          if (fullVideo && startTime) {
+            showScheduledBroadcast(
+              { id: fullVideo.id, snippet: fullVideo.snippet },
+              startTime
+            );
+          } else {
+            setLiveStatus("An upcoming event was found, but its start time is unavailable.");
+          }
+          return;
+        }
+
+        // Only show the empty state after successful searches confirm no result.
+        showEmptyBroadcast();
+        setLiveStatus("No live or upcoming broadcast is currently listed.");
+      } catch (error) {
+        console.error("KVBC live discovery:", error);
+
+        // An API error does not prove that the current stream has ended.
+        setLiveStatus(
+          "Unable to refresh broadcast status. The last displayed broadcast is being kept."
+        );
+      } finally {
+        discoveryInProgress = false;
+      }
+    }
+
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const navigation = document.getElementById("navigation");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navigation.classList.toggle("navigation-open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navigation.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navigation.classList.remove("navigation-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+
+    loadKVBCVideos();
+    findBroadcasts();
+
+    // Periodic discovery: search requests consume API quota.
+    setInterval(findBroadcasts, DISCOVERY_INTERVAL_MS);
+
+    // Check a known scheduled event every minute after its planned start time.
+    setInterval(() => {
+      if (
+        scheduledStream &&
+        Date.now() >= new Date(scheduledStream.startTime).getTime()
+      ) {
+        checkScheduledVideoStatus();
+      }
+    }, SCHEDULE_CHECK_INTERVAL_MS);
+  </script>
+</body>
+</html>
